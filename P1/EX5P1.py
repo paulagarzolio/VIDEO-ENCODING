@@ -58,7 +58,8 @@ if option==1:
         for j in range(cols):
             value= int(input("Insert value: "))
             serie[i].append(value)
-    d = applyDCT(0, serie)
+    inp = int(input("Select 0 if you want to convert the sequence with DCT, 1 if you want to decode the sequence or 2 if you want both: "))
+    d = applyDCT(inp, serie)
     print("Result: ", d)
 
 
