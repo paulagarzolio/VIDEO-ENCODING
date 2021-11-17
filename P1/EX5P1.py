@@ -34,7 +34,7 @@ def applyDCT(inp, serie):
             imF = idct(im)
         if inp==2:
             imF = dct(im)
-            imF = idct(imF)
+            imF = idct(imF)/max(max(im))
 
 
     return imF
