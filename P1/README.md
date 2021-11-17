@@ -5,3 +5,4 @@ In this folder we have:
 - minion.jpeg image used for testing 
 
 They all need to be in the same folder in order to work. 
+Necessary packages for this project: matplotlib, cv2, scipy.fftpack and numpy
