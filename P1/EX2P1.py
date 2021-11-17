@@ -15,6 +15,6 @@ for i, x in enumerate(images):
     print('{0}. {1}'.format(i, repr(x)))
 
 image_Selected = images[int(input("ENTER: "))]
-print(image_Selected)
-subprocess.call(['ffmpeg', '-i',str(image_Selected), '-q:v', "50",'LowQualityImage.jpeg'])
+quality = str(input("Quality value: "))
+subprocess.call(['ffmpeg', '-i',str(image_Selected), '-q:v', quality,'LowQualityImage.jpeg'])
 print("Image saved as: ", 'LowQualityImage.jpeg')
