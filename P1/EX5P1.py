@@ -67,8 +67,9 @@ if option==2:
     files = os.listdir(os.getcwd())
     files = os.listdir(os.getcwd())
     for file in files:
-        if imghdr.what(file) != None:
-            images.append(file)
+        if os.path.isfile(file):
+            if imghdr.what(file) != None and os.path.isfile(file):
+                images.append(file)
 
     print(images)
     print(
