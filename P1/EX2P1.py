@@ -10,7 +10,6 @@ for file in files:
         if imghdr.what(file)!= None and os.path.isfile(file):
             images.append(file)
 
-print(images)
 print("Select the image from the list of possible images in your current location: ")
 for i, x in enumerate(images):
     print('{0}. {1}'.format(i, repr(x)))
