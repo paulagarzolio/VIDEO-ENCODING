@@ -1,21 +1,23 @@
 import os
 import imghdr
 import subprocess
-images = list()
-files = os.listdir(os. getcwd())
 
-for file in files:
-    if os.path.isfile(file):
-        if imghdr.what(file)!= None and os.path.isfile(file):
-            images.append(file)
+def EX2P1():
+    images = list()
+    files = os.listdir(os. getcwd())
 
-print("Select the image from the list of possible images in your current location: ")
-for i, x in enumerate(images):
-    print('{0}. {1}'.format(i, repr(x)))
+    for file in files:
+        if os.path.isfile(file):
+            if imghdr.what(file)!= None and os.path.isfile(file):
+                images.append(file)
 
-image_Selected = images[int(input("ENTER: "))]
-print(image_Selected)
+    print("Select the image from the list of possible images in your current location: ")
+    for i, x in enumerate(images):
+        print('{0}. {1}'.format(i, repr(x)))
 
-subprocess.call(['ffmpeg', '-i', str(image_Selected), "-vf", "format=gray",'BWImage.jpeg'])
-print("Image saved as: ", 'BWImage.jpeg')
+    image_Selected = images[int(input("ENTER: "))]
+    print(image_Selected)
+
+    subprocess.call(['ffmpeg', '-i', str(image_Selected), "-vf", "format=gray",'BWImage.jpeg'])
+    print("Image saved as: ", 'BWImage.jpeg')
 
