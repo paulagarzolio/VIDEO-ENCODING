@@ -2,7 +2,7 @@ import os
 import imghdr
 import subprocess
 
-def EX2P1():
+def EX3P1():
     images = list()
     files = os.listdir(os. getcwd())
 
