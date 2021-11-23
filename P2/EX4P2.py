@@ -19,6 +19,6 @@ def EX4P2():
     os.system("ffmpeg -i stereo.mp3 -ac 1 mono.mp3")  #now we convert the stereo audio into mono
     os.system("ffmpeg -i mono.mp3 -acodec flac -vcodec copy out.flac") # here the mono audio is converted into another audio codec. Which in this case is .flac
     os.system("ffmpeg -i output.mp4 -i out.flac -c:v copy -map 0:v:0 -map 1:a:0 new.mp4") #lastly, we put the resulting audio again in the original video
-    print("Image saved as: ", 'new.mp4')
+    print("Video saved as: ", 'new.mp4')
 
 
