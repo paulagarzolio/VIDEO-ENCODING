@@ -13,14 +13,14 @@ Then, it will be asked to input the length N that wants the video to have.
 In this case, it will cut the remaining part and the resulting video will go from 00:00:00 to 00:00:N of the original video.
 Finally the resulting video will be stored as "output.mp4".
 
-## EX2
+### EX2
 The user also has to select the desired video first and then it automatically saves the resulting ovelayed video (YUV histogram + original video) as "histVideo.mp4".
 
-## EX3
+### EX3
 The user is first asked to select the desired video outputs from a list (720p, 480p, 360:240,160:120) and then asks to select the desireed video.
 Once the process is finished, the resulting video is saves as "scaledVideo.mp4".
 
-# EX4
+### EX4
 Again the user has to select the video option and then there are several processes that take place.
 * Firstly the audio is separed from the video and saved as "stereo.mp3".
 * Secondly it takes this video and after converting it to mono, it saves it as "mono.mp3"
