@@ -34,6 +34,7 @@ In this exercise the user is able to choose between 3 possible options:
    1. If you want to add an specific broadcasting standard.
    2. If you want to find the broadcasting standards matching your input MP4 container.
    3. If you want to show the characteristics of the video.
+
 The initial proposal of the exercise was to find the broadcasting standards matching the input mp4 container. However, I have decided to also let the user add any specific broadcasting standard that is not already in the list and also to show other characteristics of the video that I found were interesting.
 For doing so, I have created a new class broadcastingStandard and a list with all the standards (as objects of the new class).
 In this way, it was easier to make the comparisons as all were objects of the same class.
