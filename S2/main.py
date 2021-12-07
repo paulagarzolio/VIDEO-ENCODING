@@ -159,10 +159,11 @@ class chooseExercise():
 
 
     def EX4(self):
-        url= "https: // raw.githubusercontent.com / paulagarzolio / VIDEO - ENCODING / main / S2 / content / subtitle.srt"
+        url= "https://raw.githubusercontent.com/paulagarzolio/VIDEO-ENCODING/main/S2/content/subtitle.srt"
+        
         os.system("wget "+url)
         os.system(
-            "ffmpeg -i bbb.mp4 -vf subtitles=subtitle.srt -c:s mov_text -metadata:s:s:0 language=eng subtitles.mp4")
+            "ffmpeg -i bbb.mp4 -i subtitle.srt -c copy -c:s mov_text -metadata:s:s:0 language=eng subtitles.mp4")
         print("Video saved as: ", 'subtitles.mp4')
     def printExercices(self):
         print("List of exercices: ")
