@@ -40,13 +40,11 @@ For doing so, I have created a new class broadcastingStandard and a list with al
 In this way, it was easier to make the comparisons as all were objects of the same class.
 
 ### EX4
-In this exercise, the user can add subtitles to a specific video (bbb.mp4). In this case, in the function, the subtitles are downloaded from my github repository, saved as subtitle.srt and finally integrated in the video.
-As we can see we have added a new stream (0:2) which is the subtitle with some other information that I wanted to include like the language.
+In this exercise, the user can add subtitles to a specific video (bbb.mp4). In this case, the subtitles are downloaded from my github repository, saved as subtitle.srt and finally integrated in the video.
+
+Now we have added a new stream (0:2) which is the subtitle with some other information that I wanted to include like the language.
 In this new video, we can choose if we want to see the videos with the subtitles or without them by changing the stream of subtitles from stream 1 to disable.
 
-
-
-This is an example of a frame with subtitles (choosing the option: Stream 1):
 
 
 
