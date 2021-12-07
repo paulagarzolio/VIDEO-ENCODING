@@ -5,10 +5,10 @@ Then, in main.py, what we do is to initialise a new object of that type of class
 In the next step, the user is able to input the exercise, which will set the attribute exerciseNumber and will call the specific method for that exercise.
 
 This are the general functions that are used in different exercises:
-selectVideo(): is used to let the user select the desired video from the list of possible ones.
-readCodecs() and readVideoProp(): these two functions are both used in exercise 3 and though they use similar code, they result in different outputs.
-executeExercise(): depending on the exerciseNumber attribute, it will call different functions.
-setExercise(): to set the value of the attribute exerciseNumber after the input of the user
+- selectVideo(): is used to let the user select the desired video from the list of possible ones.
+- readCodecs() and readVideoProp(): these two functions are both used in exercise 3 and though they use similar code, they result in different outputs.
+- executeExercise(): depending on the exerciseNumber attribute, it will call different functions.
+- setExercise(): to set the value of the attribute exerciseNumber after the input of the user
 
 For each different exercise, I will explain what I have implemented:
 
