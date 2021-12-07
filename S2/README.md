@@ -20,6 +20,7 @@ At the end, it displays the location at which the video has been saved (“outpu
 In this exercise we want to create an mp4 container in which we have the BBB video with two specific audio tracks:
 - aac with lower bitrate
 - stereo mp3
+
 In this case the videoSelected is specifically “bbb.mp4” and the user is not able to change it.
 The first step is to create a copy of the video with a specific duration of 1 minute. Then, we store in different files the separate tracks: video track, an audio track converted to mp3 and another audio track converted to aac codec and with a lower quality (lower bit rate).
 
