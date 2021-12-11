@@ -77,7 +77,7 @@ class chooseExercise():
                       "ffmpeg -i "+video_Selected+" -c:v libvpx-vp9 -crf 30 -b:v 0 VP9.mkv",
                       "ffmpeg -i "+video_Selected+" -c:v libx265 h265.mkv",
                       "ffmpeg -i "+video_Selected+" -c:v libaom-av1 -crf 30 -b:v 0 AV1.mkv"])
-        directories = list(["VP8.webm","VP9.webm","h265.webm","AV1.webm"])
+        directories = list(["VP8.mkv","VP9.mkv","h265.mkv","AV1.mkv"])
         os.system(codes[codec_Selected])
         print("Video saved as: ", directories[codec_Selected])
 
