@@ -91,7 +91,7 @@ class chooseExercise():
 
     def EX3(self, IP="127.0.0.1:23000"):
         video_Selected = "bbb.mp4"
-        os.system("ffmpeg -i lowquality.mp4 -v 0 -vcodec mpeg4 -f mpegts udp://"+IP)
+        os.system("ffmpeg -i bbb.mp4 -v 0 -vcodec mpeg4 -f mpegts udp://"+IP)
 
     def EX4(self):
         IP = str(input("Choose the IP to broadcast the bbb video (<ip>:<port>). "))
